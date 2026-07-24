@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
-import StatsBar from '../components/StatsBar';
+
 import ProductsSection from '../components/ProductsSection';
 import EcosystemSection from '../components/EcosystemSection';
 import Footer from '../components/Footer';
@@ -21,7 +21,7 @@ export default function Home() {
 
       <main id="main-content" aria-label="Main content">
         <HeroSection />
-        <StatsBar />
+
         <ProductsSection />
         <EcosystemSection />
       </main>
