@@ -237,13 +237,21 @@ img, svg {
   border-radius: var(--radius-sm);
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: rgba(241, 245, 249, 0.6) !important;
+  -webkit-text-fill-color: rgba(241, 245, 249, 0.6) !important;
+  background: transparent !important;
+  border: none;
+  cursor: pointer;
   transition: all var(--transition-fast);
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: var(--font-sans);
 }
 
 .navbar__link:hover {
-  color: var(--text-primary);
-  background: var(--bg-card);
+  color: #f1f5f9 !important;
+  -webkit-text-fill-color: #f1f5f9 !important;
+  background: var(--bg-card) !important;
 }
 
 .navbar__cta {
@@ -251,17 +259,22 @@ img, svg {
   border-radius: var(--radius-sm);
   font-size: 0.875rem;
   font-weight: 600;
-  background: linear-gradient(135deg, var(--accent-indigo), var(--accent-cyan));
-  color: #fff;
+  background: linear-gradient(135deg, var(--accent-indigo), var(--accent-cyan)) !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
   border: none;
   cursor: pointer;
   transition: all var(--transition-base);
   box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: var(--font-sans);
 }
 
 .navbar__cta:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+  background: linear-gradient(135deg, var(--accent-indigo), var(--accent-cyan)) !important;
 }
 
 /* ---- Hero Section ---- */
