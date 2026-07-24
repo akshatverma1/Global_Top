@@ -19,7 +19,9 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} role="navigation" aria-label="Main navigation">
       <Link to="/" className="navbar__logo" aria-label="Global Top Group home">
-        <div className="navbar__logo-icon" aria-hidden="true">🌐</div>
+        <div className="navbar__logo-icon" aria-hidden="true">
+          <img src="/logo.svg" alt="Global Top Group logo" width="28" height="28" style={{ borderRadius: '6px' }} />
+        </div>
         <div className="navbar__logo-text">
           Global Top <span>Group</span>
         </div>
